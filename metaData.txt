@@ -22,4 +22,5 @@ currentDataInHand
     deliveries          - balltoball
     matches             - every match result
     playerStats         - data representing players
-    team_stats          - Country or team data scrapped
+    team_stats          - data representing teams
+    MatchPlayers        - set of players of every match
