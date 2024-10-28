@@ -18,9 +18,15 @@ preprocessedData
     playerStats         - data representing players
     teamStats           - team scrapped data preprocessed
 
-currentDataInHand
+output of preprocessed
     deliveries          - balltoball
     matches             - every match result
     playerStats         - data representing players
     team_stats          - data representing teams
     MatchPlayers        - set of players of every match
+
+currentDataInHand
+    merged_data         - balltoball and match result join
+        team_stats          - data representing teams
+        MatchPlayers        - set of players of every match
+            playerStats         - data representing players
