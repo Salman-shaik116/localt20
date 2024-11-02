@@ -1,1 +1,1 @@
-![Architecture Overview](path/to/architectureOverview.png)
+![Architecture Overview](./public/architectureOverview.png)
