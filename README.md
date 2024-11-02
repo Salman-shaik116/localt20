@@ -1,3 +1,1 @@
-<!--image display (!public\architectureOverview.drawio) -->
-
-(!public\architectureOverview.drawio)
+![Architecture Overview](path/to/architectureOverview.png)
