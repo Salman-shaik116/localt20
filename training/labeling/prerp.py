@@ -94,6 +94,9 @@ def prepare_dataset(combined_dataset):
 # Prepare the dataset
 inputs, labels = prepare_dataset(combined_dataset)
 
+# save the prepared data
+tf.data.experimental.save(inputs, '/app/data/reshaped/inputs')
+
 # Adjust input shapes based on prepared data
 team_input_shape = inputs[0].shape[1:]
 player_input_shape = inputs[1].shape[1:]
@@ -415,7 +418,7 @@ lr_scheduler = ReduceLROnPlateau(monitor='val_loss', factor=0.5, patience=5)
 model_checkpoint = ModelCheckpoint('best_model.keras', monitor='val_accuracy', save_best_only=True)
 
 # Train the model with updated callbacks
-model.fit(
+history = model.fit(
     train_inputs, train_labels,
     epochs=200,
     batch_size=16,
