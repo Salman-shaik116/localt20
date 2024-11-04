@@ -276,6 +276,9 @@ for epoch in range(num_epochs):
             print('Early stopping!')
             break
 
+# Save the model
+torch.save(model.state_dict(), 't20i.pth')
+
 # Plot training and validation loss and accuracy
 plt.figure(figsize=(12, 4))
 plt.subplot(1, 2, 1)
